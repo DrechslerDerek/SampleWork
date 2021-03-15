@@ -13,7 +13,6 @@ namespace BillingReports
         public MySqlConnection GlobalConnection;
         public Connection()
         {
-            ConnectionString = @"server=localhost;userid=root;password=;database=members";
 
             using var connect = new MySqlConnection(ConnectionString);
             connect.Open();
